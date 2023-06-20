@@ -3,13 +3,18 @@ const hostName = "http://localhost";
 const port = 2000;
 const path = require("path");
 
+const cookieParser = require("cookie-parser"); // require("cookie-parser")
+
 const expressLayout = require("express-ejs-layouts"); // require "express-ejs-layouts" from it's package.
 
 const app = express();
 
-const db=require("./config/mongoose")
+const db = require("./config/mongoose");
 
 app.use(expressLayout); //use express-ejs-layouts.
+app.use(cookieParser());
+
+app.use(express.urlencoded()); // this is the parser
 
 app.use("/", require("./routes/index")); //here provide the routes.
 
