@@ -1,27 +1,25 @@
 {
-  "name": "codeial",
+  "name": "n",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon  app.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/niteshyadav7/codeial.git"
   },
-  "author": "Nitesh Yadav",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/niteshyadav7/codeial/issues"
   },
   "homepage": "https://github.com/niteshyadav7/codeial#readme",
   "dependencies": {
-    "cookie-parser": "^1.4.6",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "express-ejs-layouts": "^2.5.1",
-    "mongoose": "^7.3.0"
+    "express-ejs-layouts": "^2.5.1"
   }
 }
