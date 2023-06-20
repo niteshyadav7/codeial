@@ -7,6 +7,8 @@ const expressLayout = require("express-ejs-layouts"); // require "express-ejs-la
 
 const app = express();
 
+const db=require("./config/mongoose")
+
 app.use(expressLayout); //use express-ejs-layouts.
 
 app.use("/", require("./routes/index")); //here provide the routes.
